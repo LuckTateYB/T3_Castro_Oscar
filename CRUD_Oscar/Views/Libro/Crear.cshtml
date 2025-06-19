@@ -5,81 +5,69 @@
 }
 
 <form method="post" asp-action="Agregar">
-    <div class="border p-3">
-        <div class="form-group row">
-			<h2 class="text-info pl-3">Agregar Libro</h2>
+    <div class="card shadow-sm mt-4">
+        <div class="card-header bg-primary text-white">
+            <h3 class="mb-0">Agregar Libro</h3>
         </div>
 
-        <div class="container">
-            <div class="row">
+        <div class="card-body">
+            <div class="row g-3">
                 <div class="col-md-6">
-					<label asp-for="Titulo" class="form-label">Nombre Libro</label>
-                    <input asp-for="Titulo" class="form-control"/>
+                    <label asp-for="Titulo" class="form-label">Nombre del Libro</label>
+                    <input asp-for="Titulo" class="form-control" placeholder="Ej. Cien años de soledad" />
                 </div>
-            </div>
 
-            <div class="row">
                 <div class="col-md-6">
                     <label asp-for="Autor" class="form-label">Nombre del Autor</label>
-                    <input asp-for="Autor" class="form-control" />
+                    <input asp-for="Autor" class="form-control" placeholder="Ej. Gabriel García Márquez" />
                 </div>
-            </div>
 
-            <div class="row">
                 <div class="col-md-6">
                     <label asp-for="Tema" class="form-label">Descripción</label>
-                    <input asp-for="Tema" class="form-control" />
+                    <input asp-for="Tema" class="form-control" placeholder="Breve descripción o tema del libro" />
                 </div>
-            </div>
 
-            <div class="row">
                 <div class="col-md-6">
                     <label asp-for="Editorial" class="form-label">Editorial</label>
-                    <input asp-for="Editorial" class="form-control" />
+                    <input asp-for="Editorial" class="form-control" placeholder="Ej. Editorial Sudamericana" />
                 </div>
-            </div>
 
-            <div class="row">
                 <div class="col-md-6">
                     <label asp-for="AnioPublicacion" class="form-label">Año de Publicación</label>
-                    <input asp-for="AnioPublicacion" class="form-control" />
+                    <input asp-for="AnioPublicacion" class="form-control" placeholder="Ej. 1967" type="number" min="0" />
                 </div>
-            </div>
 
-            <div class="row">
                 <div class="col-md-6">
                     <label asp-for="Paginas" class="form-label">Número de Páginas</label>
-                    <input asp-for="Paginas" class="form-control" />
+                    <input asp-for="Paginas" class="form-control" placeholder="Ej. 432" type="number" min="1" />
                 </div>
-            </div>
 
-            <div class="row">
                 <div class="col-md-6">
                     <label asp-for="Categoria" class="form-label">Categoría</label>
-                    <input asp-for="Categoria" class="form-control" />
+                    <input asp-for="Categoria" class="form-control" placeholder="Ej. Novela, Fantasía, Historia" />
                 </div>
-            </div>
 
-            <div class="row">
                 <div class="col-md-6">
                     <label asp-for="Material" class="form-label">Material</label>
-                    <input asp-for="Material" class="form-control" />
+                    <input asp-for="Material" class="form-control" placeholder="Ej. Papel, Digital" />
                 </div>
-            </div>
 
-            <div class="row">
                 <div class="col-md-6">
                     <label asp-for="Copias" class="form-label">Número de Copias</label>
-                    <input asp-for="Copias" class="form-control" />
+                    <input asp-for="Copias" class="form-control" placeholder="Ej. 5" type="number" min="1" />
                 </div>
             </div>
 
-			<div class="d-grid gap-2 d-md-block">
-				
-					<button type="submit" class="btn btn-primary mt-3">Crear</button>
-                    <a asp-controller="Libro" asp-action="Index" class="btn btn-success mt-3">Regresar</a>
-			</div>	
+            <div class="mt-4 d-flex justify-content-end gap-2">
+                <button type="submit" class="btn btn-primary">
+                    <i class="bi bi-check-circle"></i> Crear
+                </button>
+                <a asp-controller="Libro" asp-action="Index" class="btn btn-secondary">
+                    <i class="bi bi-arrow-left"></i> Regresar
+                </a>
+            </div>
         </div>
     </div>
 </form>
+
 
