@@ -4,14 +4,25 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2 class="text-primary">Libros de Arquitectura de Software</h2>
+<div class="container py-5">
+    <h2 class="mb-4 text-center text-primary">📘 Libros de Arquitectura de Software</h2>
 
-<div class="card mb-4" style="width: 100%;">
-    <img src="https://m.media-amazon.com/images/I/51Vkb9vmuIL.jpg" class="card-img-top" style="max-width: 300px;" alt="Clean Architecture">
-    <div class="card-body">
-        <h5 class="card-title">Clean Architecture</h5>
-        <p class="card-text">Autor: Robert C. Martin. Una guía esencial para estructurar sistemas sostenibles y escalables en el tiempo.</p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/o_TH-Y78tt4" title="Clean Architecture video" frameborder="0" allowfullscreen></iframe>
+    <div class="row justify-content-center">
+        <div class="col-md-10 col-lg-8">
+            <div class="card shadow-lg border-0 mb-4 animate__animated animate__fadeIn">
+                <img src="https://m.media-amazon.com/images/I/51Vkb9vmuIL.jpg" class="card-img-top rounded-top" alt="Clean Architecture">
+                <div class="card-body">
+                    <h5 class="card-title">Clean Architecture</h5>
+                    <p class="card-text text-muted">
+                        <strong>Autor:</strong> Robert C. Martin <br />
+                        Este libro guía sobre cómo diseñar software robusto, flexible y mantenible. Se enfoca en los principios de arquitectura limpia, separación de responsabilidades y patrones sostenibles.
+                    </p>
+                    <div class="ratio ratio-16x9 mb-2">
+                        <iframe src="https://www.youtube.com/embed/o_TH-Y78tt4" title="Video de Clean Architecture" allowfullscreen></iframe>
+                    </div>
+                    <a href="https://www.amazon.com/-/es/dp/0134494164" class="btn btn-outline-primary" target="_blank">Ver en Amazon</a>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
-
